@@ -1,0 +1,23 @@
+{
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "independent",
+  "packages": ["packages/**"],
+  "command": {
+    "publish": {
+      "message": "chore(release): publish",
+      "registry": "https://npm.pkg.github.com",
+      "allowBranch": "main"
+    },
+    "create": {
+      "license": "UNLICENSED"
+    }
+  },
+  "ignoreChanges": [
+    "*.test.js",
+    "*.test.jsx",
+    "*.snap",
+    "*.integration-test.js",
+    "*.integration-test.jsx"
+  ]
+}
